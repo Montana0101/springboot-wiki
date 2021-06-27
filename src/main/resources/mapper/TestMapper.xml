@@ -10,7 +10,7 @@
     id, username, `password`
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from test
     where id = #{id,jdbcType=BIGINT}
@@ -21,9 +21,9 @@
   </delete>
   <insert id="insert" parameterType="com.montana.wiki.domain.Test">
     insert into test (id, username, `password`
-      )
+    )
     values (#{id,jdbcType=BIGINT}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
-      )
+    )
   </insert>
   <insert id="insertSelective" parameterType="com.montana.wiki.domain.Test">
     insert into test
@@ -65,10 +65,10 @@
   <update id="updateByPrimaryKey" parameterType="com.montana.wiki.domain.Test">
     update test
     set username = #{username,jdbcType=VARCHAR},
-      `password` = #{password,jdbcType=VARCHAR}
+    `password` = #{password,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
-    <select id="list" resultType="com.montana.wiki.domain.Test">
-        select * from `test`
-    </select>
+  <select id="list" resultType="com.montana.wiki.domain.Test">
+    select * from `test`
+  </select>
 </mapper>
