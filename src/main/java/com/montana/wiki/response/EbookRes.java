@@ -1,8 +1,8 @@
-package com.montana.wiki.domain;
+package com.montana.wiki.response;
 
 import java.io.Serializable;
 
-public class Ebook implements Serializable {
+public class EbookRes implements Serializable {
     private Long id;
 
     private String name;

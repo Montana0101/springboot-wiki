@@ -1,6 +1,6 @@
 package com.montana.wiki.response;
 
-public class CommonRsp<T> {
+public class CommonRes<T> {
     private boolean success= true;
 
     private String message;
